@@ -39,6 +39,7 @@ let package = Package(
                 .headerSearchPath("Shared/Category"),
                 .headerSearchPath("Shared/Message"),
                 .headerSearchPath("Shared/Peertalk"),
+                .headerSearchPath("MCP"),
             ],
             cxxSettings: [
                 .define("SHOULD_COMPILE_LOOKIN_SERVER", to: "1", .when(configuration: .debug)),
