@@ -25,6 +25,32 @@ LookinServer: https://github.com/QMUI/LookinServer
 
 macOS app: https://github.com/hughkli/Lookin/
 
+# MCP Integration (NEW! 🎉)
+
+LookinServer now supports **Model Context Protocol (MCP)** integration, enabling AI assistants like Claude to query and analyze UI hierarchy information programmatically.
+
+## Features
+- 🔍 Query complete UI hierarchy tree
+- 🎯 Search for specific UI elements
+- 📊 Analyze layout issues automatically  
+- 🤖 AI-assisted debugging and testing
+
+## Quick Start
+```swift
+import LookinServer
+
+// Start MCP server in debug mode
+LKMCPServer.shared.start()
+
+// Query UI hierarchy
+let hierarchy = LKMCPServer.shared.getUIHierarchy()
+```
+
+## Documentation
+- [MCP Integration Guide](Src/Main/MCP_README.md)
+- [Usage Examples](MCP_USAGE_EXAMPLES.md)
+- [Feature Request Document](MCP_FEATURE_REQUEST.md)
+
 # Tips
 - How to display custom information in Lookin: https://bytedance.larkoffice.com/docx/TRridRXeUoErMTxs94bcnGchnlb
 - How to display more member variables in Lookin: https://bytedance.larkoffice.com/docx/CKRndHqdeoub11xSqUZcMlFhnWe
@@ -62,6 +88,32 @@ Lookin 可以查看与修改 iOS App 里的 UI 对象，类似于 Xcode 自带�
 iOS 端 LookinServer：https://github.com/QMUI/LookinServer
 
 macOS 端软件：https://github.com/hughkli/Lookin/
+
+# MCP 集成 (全新功能! 🎉)
+
+LookinServer 现已支持 **模型上下文协议 (MCP)** 集成，使得 AI 助手（如 Claude）能够以编程方式查询和分析 UI 层级信息。
+
+## 功能特性
+- 🔍 查询完整的 UI 层级树结构
+- 🎯 搜索特定 UI 元素
+- 📊 自动分析布局问题
+- 🤖 AI 辅助调试和测试
+
+## 快速开始
+```swift
+import LookinServer
+
+// 在调试模式下启动 MCP 服务器
+LKMCPServer.shared.start()
+
+// 查询 UI 层级
+let hierarchy = LKMCPServer.shared.getUIHierarchy()
+```
+
+## 文档
+- [MCP 集成指南](Src/Main/MCP_README.md)
+- [使用示例](MCP_USAGE_EXAMPLES.md)
+- [功能需求文档](MCP_FEATURE_REQUEST.md)
 
 # 技巧
 - 如何在 Lookin 中展示自定义信息: https://bytedance.larkoffice.com/docx/TRridRXeUoErMTxs94bcnGchnlb
